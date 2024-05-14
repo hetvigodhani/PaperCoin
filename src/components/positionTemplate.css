@@ -1,0 +1,32 @@
+#box
+{
+    width: 100%;
+    color: white;
+    border-top: solid 1px;
+    margin-top: 5%;
+    background-color: #06224f;
+}
+.container1
+{
+    overflow: auto;
+}
+
+#box {
+    width: 300px; 
+    height: 220px; 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+  }
+  
+  /* Style for the P & L */
+  #pnl {
+    margin-top: 2px; 
+  }
+  
+  #pl {
+    color: blue; 
+  }
+  
+  #pl.red {
+    color: red; 
+  }  

@@ -1,0 +1,248 @@
+#parent {
+	display: flex;
+	flex-direction: row;
+}
+@media screen and (max-width: 768px) {
+  #parent {
+      flex-direction: column;
+  }
+}
+
+
+/* Button */
+.settings-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+}
+@media screen and (max-width: 768px) {
+  .settings-button {
+    bottom: 10px;
+    left: 10px;
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+/* Container1 */
+.container1 {
+  width: 360px;
+  height: 688px;
+  background-color: #131722;
+  padding: 20px;
+  border-radius: 0px;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: rgb(255, 255, 255);
+}
+ h1 {
+    color: #ffffff;
+    text-align: center;
+    padding: 0px;
+}
+p {
+  color: #ffffff;
+  text-align: center;
+  padding: 0px;
+}
+h4 {
+  color: #ffffff;
+  text-align: center;
+  padding: 0px;
+}
+.column {
+  float: left;
+  width: 45.33%;
+  padding: 0px;
+}
+@media screen and (max-width: 768px) {
+  .container1 {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+    border-width: 0.25px;
+  }
+
+  .column {
+    width: 100%;
+    float: none;
+  }
+
+  h1, h4, p {
+    text-align: center;
+    padding: 5px;
+  }
+}
+
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.button {
+  width: 350px;
+  height: 40px;
+  display: center;
+  background-color: #046daa; /* Green */
+  border: none;
+  color: white;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button1 {
+  width: 250px;
+  height: 40px;
+  margin-right:10px;
+  background-color: #046daa; /* Green */
+  border: none; 
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.popup{
+  width: 400px;
+  height: 570px;
+  background-color: #131722;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0.1);
+  padding: 15px;
+  visibility: hidden;
+  transition: transfrom 0.4s, top 0.4s;
+}
+.open-popup{
+  visibility: visible;
+  top: 350px;
+  transform: translate(-50%,-50%) scale(1);
+}
+
+.radio-inline{
+  margin-top: 10px; 
+  padding: 2px 60px;
+  color: white;
+  text-align: center; 
+  text-decoration: none; 
+  font-size: 20px; 
+  cursor: pointer;
+}
+.label1{
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  font-size: 18px;
+  text-align: left;
+}
+.input1{
+  width: 250px;
+  height: 25px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  display: table-column;
+  position: relative;
+  left: 2px;
+}
+.input2{
+  width: 250px; 
+  height: 25px; 
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px; 
+  padding: 8px;
+  font-size: 16px;
+  position: relative;
+  left: 45px;
+}
+
+.button2 {
+  width: 365px;
+  height: 55px;
+  display: center;
+  background-color: #046daa; /* Green */
+  border: none;
+  color: white;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .button,
+  .button1,
+  .button2 {
+    width: 100%;
+    max-width: 350px;
+    margin: 10px auto;
+  }
+
+  .button1 {
+    width: calc(50% - 10px);
+  }
+
+  .popup {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .radio-inline {
+    margin-right: 0;
+    padding: 15px;
+  }
+
+  .label1 {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .input1 {
+    width: 100%;
+  }
+}
+
+
+/* Container2 */
+.container2 {
+  width: 1100px;
+  height: 688px;
+  background-color: #131722;
+  padding: 20px;
+  border-radius: 0px;
+  border-style: solid;
+  border-width: 0.1px;
+  border-color: #131722;
+}
+@media screen and (max-width: 1100px) {
+  .container2 {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+    border-width: 0.1px;
+    border-color: #131722;
+  }
+}

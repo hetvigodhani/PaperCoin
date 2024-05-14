@@ -1,0 +1,68 @@
+.container15 {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    align-items: center;
+    width: 1536px; /* Optional: Set a maximum width */
+    height: 729px;
+    gap: 0px;
+    background-color: #131722; /* Set the background color to black */
+}
+
+.position-card {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.position-card h2 {
+    margin-top: 0;
+    background-color: #131722;
+}
+
+.position-card p {
+    margin: 5px 0;
+    color: #666;
+}
+
+#parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.popup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup1 {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 10px 20px; /* Add margin between popups and set the height between two popups */
+}
+
+
+
+.popup input {
+    margin-bottom: 10px;
+}
+
+.popup button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background-color: #0056b3;
+}
